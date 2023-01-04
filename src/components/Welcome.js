@@ -1,16 +1,10 @@
-// write code for Welcome component here
-import React from "react";
-function Greeting (){
-    return(
-        <h2>Welcome to Newton School</h2>
-    );
+import React from 'react'
+
+export default function Welcome(props) {
+  return (
+    <React.Fragment>
+        <h1>Hey {props.name}!</h1>
+        <h2>Welcome to Newton School.</h2>
+    </React.Fragment>
+  )
 }
-function Welcome({name}){
-    return (
-       <>
-       <h1>hey! {name}</h1>
-         <Greeting/>
-       </>
-    );
-}
-export default Welcome
